@@ -25,5 +25,7 @@ jobs:
       - name: install frontend dependencies
         run: yarn install # change this to npm or pnpm depending on which one you use
       - uses: tauri-apps/tauri-action@v0
+        with:
+          bundleIdentifier: 'com.junjiepro.sinantu'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
